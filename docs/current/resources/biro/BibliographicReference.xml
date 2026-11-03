@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b14"/>
+    <owl:onProperty rdf:resource="http://purl.org/co/element"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b15">
+    <owl:onProperty rdf:resource="http://purl.org/vocab/frbr/core#realizationOf"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/biro/BibliographicRecord"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/biro/BibliographicReference">
+    <rdfs:subClassOf rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b15"/>
+    <rdfs:subClassOf rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b13"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/co/List"/>
+    <skos:note xml:lang="en">
+Note that because different journal styles may require omission of elements of the bibliographic record in references included in a paper's reference list (e.g. the title, the identifier, the names of the eighth and subsequent authors), and because errors can be introduced when an author creates a bibliographic reference, the bibliographic reference to a published work may not be a complete or fully accurate expression of the information contained within the authoritative bibliographic record for that work.
+
+A bibliographic reference is a realization of a bibliographic record. 
+Moreover, it can contain only items referring to elements contained by the bibliographic record it realizes.
+</skos:note>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/biro/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">
+A textual reference within one creative work that references another creative work such as a journal article or a data publication (or a work in preparation for publication).
+The bibliographic reference is an expression of the bibliographic record of that cited work in a specific format. 
+Each bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.
+    </rdfs:comment>
+    <rdfs:label xml:lang="en">bibliographic reference</rdfs:label>
+    <vann:example>
+    :my-bibliographic-reference a biro:BibliographicReference ;
+        co:elementOf :my-bibliographic-record ;
+        frbr:realizationOf :my-bibliographic-record .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b14">
+    <owl:onProperty rdf:resource="http://purl.org/co/elementOf"/>
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/biro/BibliographicRecord"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>

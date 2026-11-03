@@ -28,19 +28,19 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb12"
-      },
-      {
         "@id": "http://purl.org/co/Set"
       },
       {
         "@id": "http://purl.org/vocab/frbr/core#Work"
       },
       {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb9"
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b12"
       },
       {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb10"
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b9"
+      },
+      {
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b11"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -51,28 +51,12 @@
     "http://www.w3.org/2004/02/skos/core#note": [
       {
         "@language": "en",
-        "@value": "A bibliographic collection is composed only of items containing bibliographic records.  Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists. "
+        "@value": "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."
       }
     ]
   },
   {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb12",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/biro/BibliographicList"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/vocab/frbr/core#realization"
-      }
-    ]
-  },
-  {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb9",
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b12",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -88,13 +72,13 @@
     ]
   },
   {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb10",
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b9",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb11"
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b10"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -104,13 +88,29 @@
     ]
   },
   {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb11",
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b10",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2002/07/owl#complementOf": [
       {
         "@id": "http://purl.org/spar/biro/BibliographicCollection"
+      }
+    ]
+  },
+  {
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/biro/BibliographicList"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#realization"
       }
     ]
   }

@@ -18,17 +18,17 @@ biro:BibliographicCollection a owl:Class ;
     rdfs:comment "A collection of bibliographic records, each of which references a publication (or a work in preparation for publication). Examples of bibliographic collections include a collection of the bibliographic records of all the publications that a single individual has authored, or a collection of those bibliographic records to be included in a research paper, where they are expressed as a reference list."@en ;
     rdfs:isDefinedBy biro: ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom [ a owl:Class ;
-                    owl:complementOf biro:BibliographicCollection ] ;
-            owl:onProperty frbr:part ],
-        [ a owl:Restriction ;
             owl:allValuesFrom biro:BibliographicList ;
             owl:onProperty frbr:realization ],
         [ a owl:Restriction ;
             owl:allValuesFrom biro:BibliographicRecord ;
             owl:onProperty co:element ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:complementOf biro:BibliographicCollection ] ;
+            owl:onProperty frbr:part ],
         co:Set,
         frbr:Work ;
     vs:term_status reg:statusStable ;
-    skos:note "A bibliographic collection is composed only of items containing bibliographic records.  Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists. "@en .
+    skos:note "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."@en .
 

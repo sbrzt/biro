@@ -6,12 +6,12 @@
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#part">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    <rdfs:label xml:lang="en">has part</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
-    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     <rdfs:comment xml:lang="en">
 An endeavour incorporating another endeavour.
         </rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:label xml:lang="en">has part</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
   </rdf:Description>
 </rdf:RDF>

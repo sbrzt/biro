@@ -7,7 +7,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "A work realized throgh an expression."
+        "@value": "A work realized through an expression."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
@@ -29,6 +29,11 @@
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
         "@id": "http://purl.org/vocab/frbr/core#Work"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/vocab/frbr/core#realization"
       }
     ]
   }

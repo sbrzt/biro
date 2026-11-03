@@ -1,17 +1,17 @@
-_:nb177f51282094da592ca3c364231e08fb8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicCollection> .
-<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/co/List> .
-<http://purl.org/spar/biro/BibliographicList> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-list a biro:BibliographicList ;\n        co:element :my-bibliographic-reference ;\n        frbr:realizationOf :my-bibliographic-collection .\n    " .
-_:nb177f51282094da592ca3c364231e08fb7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered list of bibliographic items, each of which contains a bibliographic reference."@en .
-<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic list"@en .
 <http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n51bade8583654abf9dc44b4aa56910b9b7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/element> .
+<http://purl.org/spar/biro/BibliographicList> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-list a biro:BibliographicList ;\n        co:element :my-bibliographic-reference ;\n        frbr:realizationOf :my-bibliographic-collection .\n    " .
 <http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2004/02/skos/core#note> "\nA bibliographic list is composed only of items containing bibliographic references. \nMoreover, it is always a realization of a bibliographic collection.\n    "@en .
-<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb177f51282094da592ca3c364231e08fb7 .
+<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b7 .
+_:n51bade8583654abf9dc44b4aa56910b9b8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic list"@en .
+_:n51bade8583654abf9dc44b4aa56910b9b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
-<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nb177f51282094da592ca3c364231e08fb8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:nb177f51282094da592ca3c364231e08fb7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/element> .
-_:nb177f51282094da592ca3c364231e08fb8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
 <http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
-_:nb177f51282094da592ca3c364231e08fb7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicReference> .
-<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb177f51282094da592ca3c364231e08fb8 .
+<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/co/List> .
+<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#comment> "An ordered list of bibliographic items, each of which contains a bibliographic reference."@en .
+<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b8 .
+_:n51bade8583654abf9dc44b4aa56910b9b8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicCollection> .
+_:n51bade8583654abf9dc44b4aa56910b9b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n51bade8583654abf9dc44b4aa56910b9b7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicReference> .
+<http://purl.org/spar/biro/BibliographicList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
