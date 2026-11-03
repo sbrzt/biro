@@ -232,12 +232,16 @@ What are the constituent literal parts and values that form a bibliographic refe
     vann:preferredNamespacePrefix "biro"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/biro"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/biro> ;
-    owl:backwardCompatibleWith biro:2013-05-11 ;
+    owl:backwardCompatibleWith biro:2026-08-14 ;
     owl:imports <http://purl.org/co>,
         <http://purl.org/spar/frbr> ;
-    owl:priorVersion biro:2013-05-11 ;
-    owl:versionIRI biro:2026-08-14 ;
-    owl:versionInfo "1.2.1"^^xsd:string ;
+    owl:priorVersion biro:2026-08-14 ;
+    owl:versionIRI biro:2026-10-05 ;
+    owl:versionInfo "1.2.2"^^xsd:string ;
+    vann:changes """
+* **v1.2.2**: 
+Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
+    """@en ;
     foaf:logo <https://github.com/SPAROntologies/biro/blob/master/spar.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/biro> ;
     schema:image <https://github.com/SPAROntologies/biro/blob/master/docs/current/biro.png> ;
@@ -362,7 +366,7 @@ frbr:realization a owl:ObjectProperty ;
 
 frbr:realizationOf a owl:ObjectProperty ;
     rdfs:label "is realization of"@en ;
-    rdfs:comment "A work realized throgh an expression."@en ;
+    rdfs:comment "A work realized through an expression."@en ;
     rdfs:domain frbr:Expression ;
     rdfs:isDefinedBy frbr: ;
     rdfs:range frbr:Work .
@@ -437,7 +441,7 @@ frbr:Endeavour a owl:Class ;
 frbr:Expression a owl:Class ;
     rdfs:label "expression"@en ;
     rdfs:comment """
-The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+The intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
 
 An expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. 
 Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.

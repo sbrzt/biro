@@ -1,0 +1,71 @@
+cff-version: 1.2.0
+title: The Bibliographic Reference Ontology (BiRO)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+- given-names: Silvio
+  family-names: Peroni
+  orcid: 'https://orcid.org/0000-0003-0530-4305'
+- given-names: David
+  family-names: Shotton
+  orcid: 'https://orcid.org/0000-0001-5506-523X'
+identifiers:
+  - type: doi
+    value: 10.25504/FAIRsharing.c06f1e
+repository-code: 'https://github.com/SPAROntologies/biro'
+url: 'http://www.sparontologies.net/ontologies/biro'
+abstract: >
+  The Bibliographic Reference Ontology (BiRO) is an ontology
+  structured according to the FRBR model to define
+  bibliographic records (as subclasses of frbr:Work) and
+  bibliographic references (as subclasses of
+  frbr:Expression), and their compilations into
+  bibliographic collections such as library catalogues, and
+  into bibliographic lists such as reference lists in
+  journal articles, respectively.
+keywords:
+- bibliographic references
+- bibliometrics
+- scholarly publishing
+- scientometrics
+- semantic publishing
+license: CC-BY-4.0
+version: 1.2.2
+date-released: '2026-10-05'
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Di Iorio"
+    given-names: "Angelo"
+    orcid: "https://orcid.org/0000-0002-6893-7452"
+  - family-names: "Peroni"
+    given-names: "Silvio"
+    orcid: "https://orcid.org/0000-0003-0530-4305"
+  - family-names: "Shotton"
+    given-names: "David"
+    orcid: "https://orcid.org/0000-0001-5506-523X"
+  - family-names: "Vitali"
+    given-names: "Fabio"
+    orcid: "https://orcid.org/0000-0002-7562-5203"
+  url: "http://ceur-ws.org/Vol-1155/paper-05.pdf"
+  collection-title: "Proceedings of 4th Workshop on Semantic Publishing (SePublica 2014)"
+  collection-type: "proceedings"
+  editors:
+  - family-names: "Garcia Castro"
+    given-names: "A."
+  - family-names: "Lange"
+    given-names: "C."
+  - family-names: "Lord"
+    given-names: "P."
+  - family-names: "Stevens"
+    given-names: "R."
+  volume: 1155
+  notes: "CEUR Workshop Proceedings"
+  title: "Describing bibliographic references in RDF"
+  year: 2014
+  publisher:
+    name: "CEUR-WS.org"
+    city: "Aachen"
+    country: "DE"

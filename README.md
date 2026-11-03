@@ -1,6 +1,12 @@
 # Bibliographic Reference Ontology (BiRO)
 
-The Bibliographic Reference Ontology (BiRO) is an ontology meant to define bibliographic records, bibliographic references, and their compilation into bibliographic collections and bibliographic lists, respectively.
+[![License](https://img.shields.io/github/license/SPAROntologies/biro)](LICENSE.md)
+[![Release](https://img.shields.io/github/v/release/SPAROntologies/biro)](https://github.com/SPAROntologies/biro/releases/latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/SPAROntologies/biro/validation.yml?label=tests)](https://github.com/SPAROntologies/biro/actions/workflows/validation.yml)
+[![Documentation](https://img.shields.io/badge/docs-sparontologies.net-blue)](http://www.sparontologies.net/ontologies/biro)
+[![IRI](https://img.shields.io/badge/IRI-purl.org%2Fspar%2Fbiro-blue)](http://purl.org/spar/biro)
+
+The **_Bibliographic Reference Ontology (BiRO)_** is an ontology meant to define bibliographic records, bibliographic references, and their compilation into bibliographic collections and bibliographic lists, respectively.
 
 **URL:** http://purl.org/spar/biro
 
