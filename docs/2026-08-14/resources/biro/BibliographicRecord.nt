@@ -1,13 +1,13 @@
-<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nb177f51282094da592ca3c364231e08fb16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicReference> .
+<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2004/02/skos/core#note> "A bibliographic record is realized only through bibliographic references."@en .
+<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic record"@en .
+<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs."@en .
+_:n51bade8583654abf9dc44b4aa56910b9b16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
 <http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/co/Set> .
 <http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .
-<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb177f51282094da592ca3c364231e08fb16 .
-<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic record"@en .
+<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n51bade8583654abf9dc44b4aa56910b9b16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicReference> .
+<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b16 .
+_:n51bade8583654abf9dc44b4aa56910b9b16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
 <http://purl.org/spar/biro/BibliographicRecord> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference a biro:BibliographicRecord ;\n        frbr:realization :my-bibliographic-reference .\n    " .
-_:nb177f51282094da592ca3c364231e08fb16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
-<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2004/02/skos/core#note> "A bibliographic record is realized only through bibliographic references."@en .
-_:nb177f51282094da592ca3c364231e08fb16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs."@en .
+<http://purl.org/spar/biro/BibliographicRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .

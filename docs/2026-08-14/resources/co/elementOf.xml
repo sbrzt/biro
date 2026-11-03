@@ -5,9 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/co/elementOf">
-    <rdfs:label xml:lang="en">is element of</rdfs:label>
-    <rdfs:comment xml:lang="en">The link to a collection in which the object is member.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/co/"/>
+    <rdfs:label xml:lang="en">is element of</rdfs:label>
     <owl:inverseOf rdf:resource="http://purl.org/co/element"/>
+    <rdfs:comment xml:lang="en">The link to a collection in which the object is member.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The relation between an object and a collection which the object is a member of.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>

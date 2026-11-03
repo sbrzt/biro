@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb1"
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b1"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -36,11 +36,6 @@
         "@id": "http://purl.org/vocab/frbr/core#Endeavour"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
-      }
-    ],
     "http://www.w3.org/2002/07/owl#inverseOf": [
       {
         "@id": "http://purl.org/spar/biro/isReferencedBy"
@@ -53,7 +48,7 @@
     ]
   },
   {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb1",
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

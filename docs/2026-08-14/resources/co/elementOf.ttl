@@ -2,8 +2,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-co:elementOf rdfs:label "is element of"@en ;
-    rdfs:comment "The link to a collection in which the object is member."@en ;
+co:elementOf a owl:ObjectProperty ;
+    rdfs:label "is element of"@en ;
+    rdfs:comment "The link to a collection in which the object is member."@en,
+        "The relation between an object and a collection which the object is a member of."@en ;
     rdfs:isDefinedBy co: ;
     owl:inverseOf co:element .
 

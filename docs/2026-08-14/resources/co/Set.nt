@@ -1,4 +1,4 @@
-<http://purl.org/co/Set> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/co/> .
 <http://purl.org/co/Set> <http://www.w3.org/2000/01/rdf-schema#label> "set"@en .
-<http://purl.org/co/Set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/co/Set> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/co/> .
 <http://purl.org/co/Set> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection that cannot contain duplicate elements."@en .
+<http://purl.org/co/Set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

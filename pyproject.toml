@@ -1,6 +1,6 @@
 [project]
 name = "biro"
-version = "0.1.0"
+version = "1.2.3"
 description = "The Bibliographic Reference Ontology (BiRO) is an ontology meant to define bibliographic records, bibliographic references, and their compilation into bibliographic collections and bibliographic lists, respectively."
 readme = "README.md"
 requires-python = ">=3.13"

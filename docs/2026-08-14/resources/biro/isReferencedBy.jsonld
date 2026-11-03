@@ -33,12 +33,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb4"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b4"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -48,7 +43,7 @@
     ]
   },
   {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb4",
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

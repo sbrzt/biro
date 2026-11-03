@@ -69,7 +69,7 @@ For instance, the content of a particular bibliographic reference contained in t
 A first necessary step to release bibliographic references like the above one in RDF by using BiRO is to describe the list where they are contained (`biro:ReferenceList`), and the particular order in which they are (by means of the [Collections Ontology](http://purl.org/co) class `co:List` and its related properties). 
 In addition, we should also make explicit the link between each of the references in the list and the actual cited articles they refer to, by means of the object property `biro:references`.
 
-    <http://dx.doi.org/10.1002/asi.21134>
+    <http://doi.org/10.1002/asi.21134>
         frbr:part :reference-list .
 
     :reference-list a biro:ReferenceList ;
@@ -109,7 +109,7 @@ In addition, we should also make explicit the link between each of the reference
             In E. Mudson (Chair), Proceedings of the ACM
             Symposium on Document Engineering, (pp. 119-126).
             New York: ACM Press.' ;
-        biro:references <http://dx.doi.org/10.1145/585058.585081> .
+        biro:references <http://doi.org/10.1145/585058.585081> .
 
 ### Describing parts of a reference
 
@@ -237,16 +237,17 @@ What are the constituent literal parts and values that form a bibliographic refe
         <http://purl.org/spar/frbr> ;
     owl:priorVersion biro:2026-08-14 ;
     owl:versionIRI biro:2026-10-05 ;
-    owl:versionInfo "1.2.2"^^xsd:string ;
-    vann:changes """
-* **v1.2.2**: 
-Added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-    """@en ;
-    foaf:logo <https://github.com/SPAROntologies/biro/blob/master/spar.png> ;
+    owl:versionInfo "1.2.3"^^xsd:string ;
+    vann:changes <https://github.com/SPAROntologies/biro/blob/master/CHANGELOG.md> ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/biro> ;
     schema:image <https://github.com/SPAROntologies/biro/blob/master/docs/current/biro.png> ;
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:includedInDataCatalog <https://fairsharing.org/> ;
-    schema:keywords "bibliographic references"@en,
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,        
+        "bibliographic references"@en,
         "bibliometrics"@en,
         "scholarly publishing"@en,
         "scientometrics"@en,
@@ -285,7 +286,6 @@ biro:references a owl:ObjectProperty ;
             owl:unionOf ( biro:BibliographicRecord biro:BibliographicReference ) ] ;
     rdfs:isDefinedBy biro: ;
     rdfs:range frbr:Endeavour ;
-    rdfs:subPropertyOf owl:topObjectProperty ;
     owl:inverseOf biro:isReferencedBy ;
     vs:term_status reg:statusStable .
 
@@ -311,7 +311,6 @@ biro:isReferencedBy a owl:ObjectProperty ;
     rdfs:isDefinedBy biro: ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( biro:BibliographicRecord biro:BibliographicReference ) ] ;
-    rdfs:subPropertyOf owl:topObjectProperty ;
     vs:term_status reg:statusStable .
 
 frbr:part a owl:ObjectProperty,
@@ -369,9 +368,8 @@ frbr:realizationOf a owl:ObjectProperty ;
     rdfs:comment "A work realized through an expression."@en ;
     rdfs:domain frbr:Expression ;
     rdfs:isDefinedBy frbr: ;
+    owl:inverseOf frbr:realization ;
     rdfs:range frbr:Work .
-
-owl:topObjectProperty a owl:ObjectProperty .
 
 biro:BibliographicCollection a owl:Class ;
     rdfs:label "bibliographic collection"@en ;
@@ -395,12 +393,18 @@ biro:BibliographicCollection a owl:Class ;
         co:Set,
         frbr:Work ;
     vs:term_status reg:statusStable ;
-    skos:note "A bibliographic collection is composed only of items containing bibliographic records.  Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists. "@en .
+    skos:note "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."@en .
 
 co:element a owl:ObjectProperty ;
     rdfs:label "has element"@en ;
     rdfs:comment "The link to the members of a collection."@en ;
     rdfs:isDefinedBy co: .
+
+co:elementOf a owl:ObjectProperty ;
+    rdfs:label "is element of"@en ;
+    rdfs:comment "The relation between an object and a collection which the object is a member of."@en ;
+    rdfs:isDefinedBy co: ;
+    owl:inverseOf co:element .
 
 biro:BibliographicReference a owl:Class ;
     rdfs:label "bibliographic reference"@en ;

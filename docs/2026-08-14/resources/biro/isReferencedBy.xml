@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/biro/isReferencedBy">
+    <rdfs:range rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/biro/"/>
+    <vann:example>
+    :my-paper
+        biro:isReferencedBy :my-bibliographic-reference .
+    </vann:example>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">is referenced by</rdfs:label>
+    <rdfs:comment xml:lang="en">The relation between a publication and the bibliographic record or bibliographic reference describing it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b5">
+    <rdf:first rdf:resource="http://purl.org/spar/biro/BibliographicRecord"/>
+    <rdf:rest rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b6">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/biro/BibliographicReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n51bade8583654abf9dc44b4aa56910b9b5"/>
+  </rdf:Description>
+</rdf:RDF>
