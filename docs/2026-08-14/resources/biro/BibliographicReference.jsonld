@@ -28,16 +28,16 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b15"
+      },
+      {
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b13"
+      },
+      {
         "@id": "http://purl.org/vocab/frbr/core#Expression"
       },
       {
         "@id": "http://purl.org/co/List"
-      },
-      {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb13"
-      },
-      {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb15"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -53,39 +53,7 @@
     ]
   },
   {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb13",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "_:nb177f51282094da592ca3c364231e08fb14"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/co/element"
-      }
-    ]
-  },
-  {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb14",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/biro/BibliographicRecord"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/co/elementOf"
-      }
-    ]
-  },
-  {
-    "@id": "_:nb177f51282094da592ca3c364231e08fb15",
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b15",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -97,6 +65,38 @@
     "http://www.w3.org/2002/07/owl#onProperty": [
       {
         "@id": "http://purl.org/vocab/frbr/core#realizationOf"
+      }
+    ]
+  },
+  {
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b14"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/co/element"
+      }
+    ]
+  },
+  {
+    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/biro/BibliographicRecord"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/co/elementOf"
       }
     ]
   }

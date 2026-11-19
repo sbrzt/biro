@@ -1,10 +1,17 @@
 [
   {
     "@id": "http://purl.org/co/elementOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
         "@value": "The link to a collection in which the object is member."
+      },
+      {
+        "@language": "en",
+        "@value": "The relation between an object and a collection which the object is a member of."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

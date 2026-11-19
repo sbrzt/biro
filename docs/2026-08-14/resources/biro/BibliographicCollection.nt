@@ -1,23 +1,23 @@
-_:nb177f51282094da592ca3c364231e08fb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb177f51282094da592ca3c364231e08fb12 .
-_:nb177f51282094da592ca3c364231e08fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n51bade8583654abf9dc44b4aa56910b9b11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
 <http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/co/Set> .
-_:nb177f51282094da592ca3c364231e08fb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .
-_:nb177f51282094da592ca3c364231e08fb9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicRecord> .
-<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb177f51282094da592ca3c364231e08fb9 .
-_:nb177f51282094da592ca3c364231e08fb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:nb177f51282094da592ca3c364231e08fb12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicList> .
-_:nb177f51282094da592ca3c364231e08fb9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/element> .
-_:nb177f51282094da592ca3c364231e08fb10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
-<http://purl.org/spar/biro/BibliographicCollection> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-collection a biro:BibliographicCollection ;\n        co:element :my-bibliographic-record ;\n        frbr:realization :my-bibliographic-list .\n    " .
 <http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of bibliographic records, each of which references a publication (or a work in preparation for publication). Examples of bibliographic collections include a collection of the bibliographic records of all the publications that a single individual has authored, or a collection of those bibliographic records to be included in a research paper, where they are expressed as a reference list."@en .
-<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2004/02/skos/core#note> "A bibliographic collection is composed only of items containing bibliographic records.  Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists. "@en .
+<http://purl.org/spar/biro/BibliographicCollection> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-collection a biro:BibliographicCollection ;\n        co:element :my-bibliographic-record ;\n        frbr:realization :my-bibliographic-list .\n    " .
+_:n51bade8583654abf9dc44b4aa56910b9b12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/element> .
 <http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic collection"@en .
-<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nb177f51282094da592ca3c364231e08fb10 .
-_:nb177f51282094da592ca3c364231e08fb10 <http://www.w3.org/2002/07/owl#allValuesFrom> _:nb177f51282094da592ca3c364231e08fb11 .
+_:n51bade8583654abf9dc44b4aa56910b9b10 <http://www.w3.org/2002/07/owl#complementOf> <http://purl.org/spar/biro/BibliographicCollection> .
+_:n51bade8583654abf9dc44b4aa56910b9b9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#part> .
+<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Work> .
 <http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
-_:nb177f51282094da592ca3c364231e08fb12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realization> .
+_:n51bade8583654abf9dc44b4aa56910b9b9 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n51bade8583654abf9dc44b4aa56910b9b10 .
+<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b12 .
+<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n51bade8583654abf9dc44b4aa56910b9b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n51bade8583654abf9dc44b4aa56910b9b12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicRecord> .
+<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b9 .
+_:n51bade8583654abf9dc44b4aa56910b9b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b11 .
+<http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/2004/02/skos/core#note> "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."@en .
 <http://purl.org/spar/biro/BibliographicCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nb177f51282094da592ca3c364231e08fb11 <http://www.w3.org/2002/07/owl#complementOf> <http://purl.org/spar/biro/BibliographicCollection> .
+_:n51bade8583654abf9dc44b4aa56910b9b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n51bade8583654abf9dc44b4aa56910b9b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n51bade8583654abf9dc44b4aa56910b9b11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicList> .

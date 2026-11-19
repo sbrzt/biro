@@ -18,7 +18,6 @@ biro:references a owl:ObjectProperty ;
             owl:unionOf ( biro:BibliographicRecord biro:BibliographicReference ) ] ;
     rdfs:isDefinedBy biro: ;
     rdfs:range frbr:Endeavour ;
-    rdfs:subPropertyOf owl:topObjectProperty ;
     owl:inverseOf biro:isReferencedBy ;
     vs:term_status reg:statusStable .
 

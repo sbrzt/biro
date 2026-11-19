@@ -1,15 +1,14 @@
-_:nb177f51282094da592ca3c364231e08fb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:nb177f51282094da592ca3c364231e08fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicRecord> .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:n51bade8583654abf9dc44b4aa56910b9b4 .
+_:n51bade8583654abf9dc44b4aa56910b9b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicRecord> .
 <http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a publication and the bibliographic record or bibliographic reference describing it."@en .
-_:nb177f51282094da592ca3c364231e08fb4 <http://www.w3.org/2002/07/owl#unionOf> _:nb177f51282094da592ca3c364231e08fb5 .
-<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-_:nb177f51282094da592ca3c364231e08fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicReference> .
-<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
-_:nb177f51282094da592ca3c364231e08fb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:nb177f51282094da592ca3c364231e08fb4 .
-<http://purl.org/spar/biro/isReferencedBy> <http://purl.org/vocab/vann/example> "\n    :my-paper\n        biro:isReferencedBy :my-bibliographic-reference .\n    " .
-<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en .
-<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
-<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nb177f51282094da592ca3c364231e08fb5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nb177f51282094da592ca3c364231e08fb6 .
 <http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
+<http://purl.org/spar/biro/isReferencedBy> <http://purl.org/vocab/vann/example> "\n    :my-paper\n        biro:isReferencedBy :my-bibliographic-reference .\n    " .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/frbr/core#Endeavour> .
+_:n51bade8583654abf9dc44b4aa56910b9b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n51bade8583654abf9dc44b4aa56910b9b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n51bade8583654abf9dc44b4aa56910b9b4 <http://www.w3.org/2002/07/owl#unionOf> _:n51bade8583654abf9dc44b4aa56910b9b5 .
+<http://purl.org/spar/biro/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en .
+_:n51bade8583654abf9dc44b4aa56910b9b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n51bade8583654abf9dc44b4aa56910b9b6 .
+_:n51bade8583654abf9dc44b4aa56910b9b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicReference> .

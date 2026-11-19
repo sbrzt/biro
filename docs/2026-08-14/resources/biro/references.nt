@@ -1,16 +1,15 @@
-<http://purl.org/spar/biro/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a bibliographic record or a bibliographic reference and the publication being referenced."@en .
-<http://purl.org/spar/biro/references> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/biro/isReferencedBy> .
-_:nb177f51282094da592ca3c364231e08fb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/vocab/frbr/core#Endeavour> .
-_:nb177f51282094da592ca3c364231e08fb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nb177f51282094da592ca3c364231e08fb3 .
-<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
-<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#label> "references"@en .
-<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#domain> _:nb177f51282094da592ca3c364231e08fb1 .
-<http://purl.org/spar/biro/references> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n51bade8583654abf9dc44b4aa56910b9b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicReference> .
+<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a bibliographic record or a bibliographic reference and the publication being referenced."@en .
+_:n51bade8583654abf9dc44b4aa56910b9b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n51bade8583654abf9dc44b4aa56910b9b3 .
+<http://purl.org/spar/biro/references> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/biro/isReferencedBy> .
 <http://purl.org/spar/biro/references> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference\n        biro:references :my-paper .\n    " .
-<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
-_:nb177f51282094da592ca3c364231e08fb1 <http://www.w3.org/2002/07/owl#unionOf> _:nb177f51282094da592ca3c364231e08fb2 .
-_:nb177f51282094da592ca3c364231e08fb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicReference> .
-_:nb177f51282094da592ca3c364231e08fb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicRecord> .
-_:nb177f51282094da592ca3c364231e08fb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#domain> _:n51bade8583654abf9dc44b4aa56910b9b1 .
+<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#label> "references"@en .
+_:n51bade8583654abf9dc44b4aa56910b9b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/biro/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:n51bade8583654abf9dc44b4aa56910b9b1 <http://www.w3.org/2002/07/owl#unionOf> _:n51bade8583654abf9dc44b4aa56910b9b2 .
+<http://purl.org/spar/biro/references> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/biro/references> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
+_:n51bade8583654abf9dc44b4aa56910b9b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/biro/BibliographicRecord> .
+_:n51bade8583654abf9dc44b4aa56910b9b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

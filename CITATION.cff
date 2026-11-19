@@ -32,8 +32,8 @@ keywords:
 - scientometrics
 - semantic publishing
 license: CC-BY-4.0
-version: 1.2.2
-date-released: '2026-10-05'
+version: 1.2.3
+date-released: '2026-08-14'
 preferred-citation:
   type: conference-paper
   authors:
