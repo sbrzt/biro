@@ -16,7 +16,7 @@ biro:BibliographicList a owl:Class ;
         frbr:realizationOf :my-bibliographic-collection .
     """ ;
     rdfs:comment "An ordered list of bibliographic items, each of which contains a bibliographic reference."@en ;
-    rdfs:isDefinedBy biro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/biro> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom biro:BibliographicReference ;
             owl:onProperty co:element ],

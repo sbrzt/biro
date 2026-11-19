@@ -22,7 +22,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/biro/"
+        "@id": "http://purl.org/spar/biro"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -33,7 +33,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b4"
+        "@id": "_:nbbc1978b8b1142fca25d551065ca4592b4"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -43,7 +43,7 @@
     ]
   },
   {
-    "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b4",
+    "@id": "_:nbbc1978b8b1142fca25d551065ca4592b4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

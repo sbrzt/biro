@@ -17,12 +17,12 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b1"
+        "@id": "_:nbbc1978b8b1142fca25d551065ca4592b1"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/biro/"
+        "@id": "http://purl.org/spar/biro"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b1",
+    "@id": "_:nbbc1978b8b1142fca25d551065ca4592b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

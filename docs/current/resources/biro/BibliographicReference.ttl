@@ -20,7 +20,7 @@ A textual reference within one creative work that references another creative wo
 The bibliographic reference is an expression of the bibliographic record of that cited work in a specific format. 
 Each bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.
     """@en ;
-    rdfs:isDefinedBy biro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/biro> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:allValuesFrom biro:BibliographicRecord ;

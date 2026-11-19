@@ -9,6 +9,6 @@ frbr:part a owl:ObjectProperty,
 An endeavour incorporating another endeavour.
         """@en ;
     rdfs:domain frbr:Endeavour ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Endeavour .
 

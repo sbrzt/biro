@@ -15,7 +15,7 @@ biro:isReferencedBy a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a publication and the bibliographic record or bibliographic reference describing it."@en ;
     rdfs:domain frbr:Endeavour ;
-    rdfs:isDefinedBy biro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/biro> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( biro:BibliographicRecord biro:BibliographicReference ) ] ;
     vs:term_status reg:statusStable .

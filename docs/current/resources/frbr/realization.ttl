@@ -6,6 +6,6 @@ frbr:realization a owl:ObjectProperty ;
     rdfs:label "has realization"@en ;
     rdfs:comment "An expression that realizes a work."@en ;
     rdfs:domain frbr:Work ;
-    rdfs:isDefinedBy frbr: ;
+    rdfs:isDefinedBy <http://purl.org/vocab/frbr/core> ;
     rdfs:range frbr:Expression .
 

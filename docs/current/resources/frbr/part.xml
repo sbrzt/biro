@@ -4,14 +4,14 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#part">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     <rdfs:comment xml:lang="en">
 An endeavour incorporating another endeavour.
         </rdfs:comment>
     <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
     <rdfs:label xml:lang="en">has part</rdfs:label>
   </rdf:Description>
 </rdf:RDF>
