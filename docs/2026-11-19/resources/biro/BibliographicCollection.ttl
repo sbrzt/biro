@@ -1,0 +1,34 @@
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix co: <http://purl.org/co/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+biro:BibliographicCollection a owl:Class ;
+    rdfs:label "bibliographic collection"@en ;
+    vann:example """
+    :my-bibliographic-collection a biro:BibliographicCollection ;
+        co:element :my-bibliographic-record ;
+        frbr:realization :my-bibliographic-list .
+    """ ;
+    rdfs:comment "A collection of bibliographic records, each of which references a publication (or a work in preparation for publication). Examples of bibliographic collections include a collection of the bibliographic records of all the publications that a single individual has authored, or a collection of those bibliographic records to be included in a research paper, where they are expressed as a reference list."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/biro> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom biro:BibliographicList ;
+            owl:onProperty frbr:realization ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom biro:BibliographicRecord ;
+            owl:onProperty co:element ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:complementOf biro:BibliographicCollection ] ;
+            owl:onProperty frbr:part ],
+        co:Set,
+        frbr:Work ;
+    vs:term_status reg:statusStable ;
+    skos:note "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."@en .
+

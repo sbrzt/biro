@@ -1,0 +1,18 @@
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+biro:ReferenceList a owl:Class ;
+    rdfs:label "reference list"@en ;
+    vann:example """
+    :my-reference-list a biro:ReferenceList ;
+        dcterms:description 'The reference list of my paper.' .
+    """ ;
+    rdfs:comment "A list used to describe the bibliography of a research paper, a journal article, a book, a book chapter or similar publication."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/biro> ;
+    rdfs:subClassOf biro:BibliographicList ;
+    vs:term_status reg:statusStable .
+
