@@ -5,10 +5,10 @@
 >
   <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#realization">
     <rdfs:label xml:lang="en">has realization</rdfs:label>
-    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
     <rdfs:comment xml:lang="en">An expression that realizes a work.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

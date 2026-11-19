@@ -28,13 +28,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/co/Set"
-      },
-      {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b16"
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b16"
       },
       {
         "@id": "http://purl.org/vocab/frbr/core#Work"
+      },
+      {
+        "@id": "http://purl.org/co/Set"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "@id": "_:n51bade8583654abf9dc44b4aa56910b9b16",
+    "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b16",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

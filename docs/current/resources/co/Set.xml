@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/co/Set">
-    <rdfs:label xml:lang="en">set</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/co/"/>
     <rdfs:comment xml:lang="en">A collection that cannot contain duplicate elements.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">set</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/co/"/>
   </rdf:Description>
 </rdf:RDF>

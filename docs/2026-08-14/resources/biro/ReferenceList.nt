@@ -1,7 +1,7 @@
-<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/biro/BibliographicList> .
-<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
-<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2000/01/rdf-schema#label> "reference list"@en .
-<http://purl.org/spar/biro/ReferenceList> <http://purl.org/vocab/vann/example> "\n    :my-reference-list a biro:ReferenceList ;\n        dcterms:description 'The reference list of my paper.' .\n    " .
-<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
+<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/biro/BibliographicList> .
+<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2000/01/rdf-schema#label> "reference list"@en .
 <http://purl.org/spar/biro/ReferenceList> <http://www.w3.org/2000/01/rdf-schema#comment> "A list used to describe the bibliography of a research paper, a journal article, a book, a book chapter or similar publication."@en .
+<http://purl.org/spar/biro/ReferenceList> <http://purl.org/vocab/vann/example> "\n    :my-reference-list a biro:ReferenceList ;\n        dcterms:description 'The reference list of my paper.' .\n    " .

@@ -1,20 +1,20 @@
-_:n51bade8583654abf9dc44b4aa56910b9b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n51bade8583654abf9dc44b4aa56910b9b15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
-<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b15 .
-_:n51bade8583654abf9dc44b4aa56910b9b15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicRecord> .
-<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2004/02/skos/core#note> "\nNote that because different journal styles may require omission of elements of the bibliographic record in references included in a paper's reference list (e.g. the title, the identifier, the names of the eighth and subsequent authors), and because errors can be introduced when an author creates a bibliographic reference, the bibliographic reference to a published work may not be a complete or fully accurate expression of the information contained within the authoritative bibliographic record for that work.\n\nA bibliographic reference is a realization of a bibliographic record. \nMoreover, it can contain only items referring to elements contained by the bibliographic record it realizes.\n"@en .
-<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
-_:n51bade8583654abf9dc44b4aa56910b9b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:n51bade8583654abf9dc44b4aa56910b9b13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:n51bade8583654abf9dc44b4aa56910b9b14 .
-<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#comment> "\nA textual reference within one creative work that references another creative work such as a journal article or a data publication (or a work in preparation for publication).\nThe bibliographic reference is an expression of the bibliographic record of that cited work in a specific format. \nEach bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.\n    "@en .
-<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic reference"@en .
-<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b13 .
-_:n51bade8583654abf9dc44b4aa56910b9b14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/elementOf> .
 <http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Expression> .
-<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/co/List> .
-_:n51bade8583654abf9dc44b4aa56910b9b14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicRecord> .
-_:n51bade8583654abf9dc44b4aa56910b9b13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/element> .
-_:n51bade8583654abf9dc44b4aa56910b9b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na48838fff2c448ce89f43509d0a1d6d8b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b15 .
+_:na48838fff2c448ce89f43509d0a1d6d8b15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicRecord> .
+<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/biro/> .
 <http://purl.org/spar/biro/BibliographicReference> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference a biro:BibliographicReference ;\n        co:elementOf :my-bibliographic-record ;\n        frbr:realizationOf :my-bibliographic-record .\n    " .
+<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/co/List> .
+_:na48838fff2c448ce89f43509d0a1d6d8b15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/vocab/frbr/core#realizationOf> .
+_:na48838fff2c448ce89f43509d0a1d6d8b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na48838fff2c448ce89f43509d0a1d6d8b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:na48838fff2c448ce89f43509d0a1d6d8b13 <http://www.w3.org/2002/07/owl#allValuesFrom> _:na48838fff2c448ce89f43509d0a1d6d8b14 .
+<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic reference"@en .
+_:na48838fff2c448ce89f43509d0a1d6d8b14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/biro/BibliographicRecord> .
+_:na48838fff2c448ce89f43509d0a1d6d8b14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/elementOf> .
 <http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:na48838fff2c448ce89f43509d0a1d6d8b13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/co/element> .
+<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2004/02/skos/core#note> "\nNote that because different journal styles may require omission of elements of the bibliographic record in references included in a paper's reference list (e.g. the title, the identifier, the names of the eighth and subsequent authors), and because errors can be introduced when an author creates a bibliographic reference, the bibliographic reference to a published work may not be a complete or fully accurate expression of the information contained within the authoritative bibliographic record for that work.\n\nA bibliographic reference is a realization of a bibliographic record. \nMoreover, it can contain only items referring to elements contained by the bibliographic record it realizes.\n"@en .
+<http://purl.org/spar/biro/BibliographicReference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b13 .

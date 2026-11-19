@@ -273,27 +273,27 @@ What are the constituent literal parts and values that form a bibliographic refe
     """ ;
         rdfs:comment "A collection of bibliographic records, each of which references a publication (or a work in preparation for publication). Examples of bibliographic collections include a collection of the bibliographic records of all the publications that a single individual has authored, or a collection of those bibliographic records to be included in a research paper, where they are expressed as a reference list."@en ;
         rdfs:isDefinedBy biro: ;
-        rdfs:subClassOf _:n51bade8583654abf9dc44b4aa56910b9b11,
-            _:n51bade8583654abf9dc44b4aa56910b9b12,
-            _:n51bade8583654abf9dc44b4aa56910b9b9,
+        rdfs:subClassOf _:na48838fff2c448ce89f43509d0a1d6d8b11,
+            _:na48838fff2c448ce89f43509d0a1d6d8b12,
+            _:na48838fff2c448ce89f43509d0a1d6d8b9,
             co:Set,
             frbr:Work ;
         vs:term_status reg:statusStable ;
         skos:note "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."@en .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b10 a owl:Class ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b10 a owl:Class ;
         owl:complementOf biro:BibliographicCollection .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b11 a owl:Restriction ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b11 a owl:Restriction ;
         owl:allValuesFrom biro:BibliographicList ;
         owl:onProperty frbr:realization .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b12 a owl:Restriction ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b12 a owl:Restriction ;
         owl:allValuesFrom biro:BibliographicRecord ;
         owl:onProperty co:element .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b9 a owl:Restriction ;
-        owl:allValuesFrom _:n51bade8583654abf9dc44b4aa56910b9b10 ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b9 a owl:Restriction ;
+        owl:allValuesFrom _:na48838fff2c448ce89f43509d0a1d6d8b10 ;
         owl:onProperty frbr:part .
 }
 
@@ -329,19 +329,19 @@ What are the constituent literal parts and values that form a bibliographic refe
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b9"
+          },
+          {
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b11"
+          },
+          {
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b12"
+          },
+          {
             "@id": "http://purl.org/co/Set"
           },
           {
             "@id": "http://purl.org/vocab/frbr/core#Work"
-          },
-          {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b12"
-          },
-          {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b9"
-          },
-          {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b11"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -357,29 +357,13 @@ What are the constituent literal parts and values that form a bibliographic refe
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b12",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b9",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
         "http://www.w3.org/2002/07/owl#allValuesFrom": [
           {
-            "@id": "http://purl.org/spar/biro/BibliographicRecord"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/co/element"
-          }
-        ]
-      },
-      {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b9",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
-          {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b10"
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b10"
           }
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
@@ -389,7 +373,7 @@ What are the constituent literal parts and values that form a bibliographic refe
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b10",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b10",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -400,7 +384,7 @@ What are the constituent literal parts and values that form a bibliographic refe
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b11",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b11",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -414,33 +398,49 @@ What are the constituent literal parts and values that form a bibliographic refe
             "@id": "http://purl.org/vocab/frbr/core#realization"
           }
         ]
+      },
+      {
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b12",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+          {
+            "@id": "http://purl.org/spar/biro/BibliographicRecord"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/co/element"
+          }
+        ]
       }
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_0fdb26a6a125373431a857fadc9ea20d_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n51bade8583654abf9dc44b4aa56910b9b11 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/Set> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A collection of bibliographic records, each of which references a publication (or a work in preparation for publication). Examples of bibliographic collections include a collection of the bibliographic records of all the publications that a single individual has authored, or a collection of those bibliographic records to be included in a research paper, where they are expressed as a reference list."@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-collection a biro:BibliographicCollection ;\n        co:element :my-bibliographic-record ;\n        frbr:realization :my-bibliographic-list .\n    " &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b12 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_0fdb26a6a125373431a857fadc9ea20d_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:na48838fff2c448ce89f43509d0a1d6d8b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b12 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b12 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#label> "bibliographic collection"@en &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b10 &lt;http://www.w3.org/2002/07/owl#complementOf> &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b9 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#part> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b9 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:n51bade8583654abf9dc44b4aa56910b9b10 &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b12 &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b9 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:na48838fff2c448ce89f43509d0a1d6d8b10 &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b9 &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b11 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicList> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b11 &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b12 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b9 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b11 &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2004/02/skos/core#note> "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b12 &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/Set> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-collection a biro:BibliographicCollection ;\n        co:element :my-bibliographic-record ;\n        frbr:realization :my-bibliographic-list .\n    " &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b9 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b10 &lt;http://www.w3.org/2002/07/owl#complementOf> &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b11 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b9 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b11 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicList> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2004/02/skos/core#note> "A bibliographic collection is composed only of items containing bibliographic records. Moreover, it cannot be part of other bibliographic collections, and it is realized only by bibliographic lists."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A collection of bibliographic records, each of which references a publication (or a work in preparation for publication). Examples of bibliographic collections include a collection of the bibliographic records of all the publications that a single individual has authored, or a collection of those bibliographic records to be included in a research paper, where they are expressed as a reference list."@en &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b9 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#part> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_750c566e2feae6833630bee9059b75af_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>bibliographic list</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/biro/BibliographicList <a title="Go to resource documentation" class=ms-2 href=resources/biro/BibliographicList.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An ordered list of bibliographic items, each of which contains a bibliographic reference.">An ordered list of bibliographic items, each of which contains a bibliographic reference.
@@ -487,8 +487,8 @@ Moreover, it is always a realization of a bibliographic collection.
     """ ;
         rdfs:comment "An ordered list of bibliographic items, each of which contains a bibliographic reference."@en ;
         rdfs:isDefinedBy biro: ;
-        rdfs:subClassOf _:n51bade8583654abf9dc44b4aa56910b9b7,
-            _:n51bade8583654abf9dc44b4aa56910b9b8,
+        rdfs:subClassOf _:na48838fff2c448ce89f43509d0a1d6d8b7,
+            _:na48838fff2c448ce89f43509d0a1d6d8b8,
             co:List,
             frbr:Expression ;
         vs:term_status reg:statusStable ;
@@ -497,11 +497,11 @@ A bibliographic list is composed only of items containing bibliographic referenc
 Moreover, it is always a realization of a bibliographic collection.
     """@en .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b7 a owl:Restriction ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b7 a owl:Restriction ;
         owl:allValuesFrom biro:BibliographicReference ;
         owl:onProperty co:element .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b8 a owl:Restriction ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b8 a owl:Restriction ;
         owl:allValuesFrom biro:BibliographicCollection ;
         owl:onProperty frbr:realizationOf .
 }
@@ -538,16 +538,16 @@ Moreover, it is always a realization of a bibliographic collection.
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b7"
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b7"
+          },
+          {
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b8"
           },
           {
             "@id": "http://purl.org/vocab/frbr/core#Expression"
           },
           {
             "@id": "http://purl.org/co/List"
-          },
-          {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b8"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -563,7 +563,7 @@ Moreover, it is always a realization of a bibliographic collection.
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b7",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b7",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -579,7 +579,7 @@ Moreover, it is always a realization of a bibliographic collection.
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b8",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b8",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -597,23 +597,23 @@ Moreover, it is always a realization of a bibliographic collection.
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_750c566e2feae6833630bee9059b75af_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-list a biro:BibliographicList ;\n        co:element :my-bibliographic-reference ;\n        frbr:realizationOf :my-bibliographic-collection .\n    " &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2004/02/skos/core#note> "\nA bibliographic list is composed only of items containing bibliographic references. \nMoreover, it is always a realization of a bibliographic collection.\n    "@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b8 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#label> "bibliographic list"@en &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b8 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_750c566e2feae6833630bee9059b75af_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:na48838fff2c448ce89f43509d0a1d6d8b7 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/List> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b7 &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2004/02/skos/core#note> "\nA bibliographic list is composed only of items containing bibliographic references. \nMoreover, it is always a realization of a bibliographic collection.\n    "@en &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b8 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-list a biro:BibliographicList ;\n        co:element :my-bibliographic-reference ;\n        frbr:realizationOf :my-bibliographic-collection .\n    " &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b8 &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An ordered list of bibliographic items, each of which contains a bibliographic reference."@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b8 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b8 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#label> "bibliographic list"@en &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b7 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b8 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b7 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b8 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/List> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_7f8db138b2930f251cbb3d6ff3534dbc_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>bibliographic record</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/biro/BibliographicRecord <a title="Go to resource documentation" class=ms-2 href=resources/biro/BibliographicRecord.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs.">A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs.
@@ -651,13 +651,13 @@ _:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://www.w3.org/2002/07/owl#allValue
     """ ;
         rdfs:comment "A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs."@en ;
         rdfs:isDefinedBy biro: ;
-        rdfs:subClassOf _:n51bade8583654abf9dc44b4aa56910b9b16,
+        rdfs:subClassOf _:na48838fff2c448ce89f43509d0a1d6d8b16,
             co:Set,
             frbr:Work ;
         vs:term_status reg:statusStable ;
         skos:note "A bibliographic record is realized only through bibliographic references."@en .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b16 a owl:Restriction ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b16 a owl:Restriction ;
         owl:allValuesFrom biro:BibliographicReference ;
         owl:onProperty frbr:realization .
 }
@@ -694,13 +694,13 @@ _:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://www.w3.org/2002/07/owl#allValue
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "http://purl.org/co/Set"
-          },
-          {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b16"
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b16"
           },
           {
             "@id": "http://purl.org/vocab/frbr/core#Work"
+          },
+          {
+            "@id": "http://purl.org/co/Set"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -716,7 +716,7 @@ _:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://www.w3.org/2002/07/owl#allValue
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b16",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b16",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -734,19 +734,19 @@ _:n51bade8583654abf9dc44b4aa56910b9b7 &lt;http://www.w3.org/2002/07/owl#allValue
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_7f8db138b2930f251cbb3d6ff3534dbc_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2004/02/skos/core#note> "A bibliographic record is realized only through bibliographic references."@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#label> "bibliographic record"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs."@en &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b16 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/Set> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b16 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b16 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b16 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference a biro:BibliographicRecord ;\n        frbr:realization :my-bibliographic-reference .\n    " &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_7f8db138b2930f251cbb3d6ff3534dbc_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#label> "bibliographic record"@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b16 &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b16 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b16 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A record that uniquely describes a particular textual or data publication (or a work in preparation for publication). Each bibliographic record is a set of entities describing aspects of the referenced work, including, for example, but not restricted to: authors, title, journal, publication year, DOI, ISSN, publisher and copyright information, or, in the case of a data publication: creators, title, version, archive, publication year, DOI or other identifier). The FRBR expression of a bibliographic record is a bibliographic reference, which usually contains only a sub-set of these entities, ordered in a particular way that corresponds to the house style of the publication in which it occurs."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2004/02/skos/core#note> "A bibliographic record is realized only through bibliographic references."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference a biro:BibliographicRecord ;\n        frbr:realization :my-bibliographic-reference .\n    " &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b16 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/Set> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_6cb054d0578730bb8ee8049271f59638_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>bibliographic reference</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/biro/BibliographicReference <a title="Go to resource documentation" class=ms-2 href=resources/biro/BibliographicReference.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="
@@ -809,8 +809,8 @@ The bibliographic reference is an expression of the bibliographic record of that
 Each bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.
     """@en ;
         rdfs:isDefinedBy biro: ;
-        rdfs:subClassOf _:n51bade8583654abf9dc44b4aa56910b9b13,
-            _:n51bade8583654abf9dc44b4aa56910b9b15,
+        rdfs:subClassOf _:na48838fff2c448ce89f43509d0a1d6d8b13,
+            _:na48838fff2c448ce89f43509d0a1d6d8b15,
             co:List,
             frbr:Expression ;
         vs:term_status reg:statusStable ;
@@ -821,15 +821,15 @@ A bibliographic reference is a realization of a bibliographic record.
 Moreover, it can contain only items referring to elements contained by the bibliographic record it realizes.
 """@en .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b13 a owl:Restriction ;
-        owl:allValuesFrom _:n51bade8583654abf9dc44b4aa56910b9b14 ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b13 a owl:Restriction ;
+        owl:allValuesFrom _:na48838fff2c448ce89f43509d0a1d6d8b14 ;
         owl:onProperty co:element .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b14 a owl:Restriction ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b14 a owl:Restriction ;
         owl:allValuesFrom biro:BibliographicRecord ;
         owl:onProperty co:elementOf .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b15 a owl:Restriction ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b15 a owl:Restriction ;
         owl:allValuesFrom biro:BibliographicRecord ;
         owl:onProperty frbr:realizationOf .
 }
@@ -866,16 +866,16 @@ Moreover, it can contain only items referring to elements contained by the bibli
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b15"
-          },
-          {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b13"
-          },
-          {
             "@id": "http://purl.org/vocab/frbr/core#Expression"
           },
           {
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b15"
+          },
+          {
             "@id": "http://purl.org/co/List"
+          },
+          {
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b13"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -891,7 +891,7 @@ Moreover, it can contain only items referring to elements contained by the bibli
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b15",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b15",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -907,13 +907,13 @@ Moreover, it can contain only items referring to elements contained by the bibli
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b13",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b13",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
         "http://www.w3.org/2002/07/owl#allValuesFrom": [
           {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b14"
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b14"
           }
         ],
         "http://www.w3.org/2002/07/owl#onProperty": [
@@ -923,7 +923,7 @@ Moreover, it can contain only items referring to elements contained by the bibli
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b14",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b14",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -941,26 +941,26 @@ Moreover, it can contain only items referring to elements contained by the bibli
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_6cb054d0578730bb8ee8049271f59638_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n51bade8583654abf9dc44b4aa56910b9b13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b15 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b15 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b15 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2004/02/skos/core#note> "\nNote that because different journal styles may require omission of elements of the bibliographic record in references included in a paper's reference list (e.g. the title, the identifier, the names of the eighth and subsequent authors), and because errors can be introduced when an author creates a bibliographic reference, the bibliographic reference to a published work may not be a complete or fully accurate expression of the information contained within the authoritative bibliographic record for that work.\n\nA bibliographic reference is a realization of a bibliographic record. \nMoreover, it can contain only items referring to elements contained by the bibliographic record it realizes.\n"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b13 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:n51bade8583654abf9dc44b4aa56910b9b14 &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nA textual reference within one creative work that references another creative work such as a journal article or a data publication (or a work in preparation for publication).\nThe bibliographic reference is an expression of the bibliographic record of that cited work in a specific format. \nEach bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.\n    "@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#label> "bibliographic reference"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n51bade8583654abf9dc44b4aa56910b9b13 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b14 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/elementOf> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_6cb054d0578730bb8ee8049271f59638_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nA textual reference within one creative work that references another creative work such as a journal article or a data publication (or a work in preparation for publication).\nThe bibliographic reference is an expression of the bibliographic record of that cited work in a specific format. \nEach bibliographic reference is a list of items containing entities that describe aspects of the referenced work - for example authors, title, journal, publication year - selected from the bibliographic record.\n    "@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/List> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b14 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b13 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b15 &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b15 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference a biro:BibliographicReference ;\n        co:elementOf :my-bibliographic-record ;\n        frbr:realizationOf :my-bibliographic-record .\n    " &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/co/List> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b15 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b13 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:na48838fff2c448ce89f43509d0a1d6d8b14 &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#label> "bibliographic reference"@en &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b14 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b14 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/elementOf> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b13 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2004/02/skos/core#note> "\nNote that because different journal styles may require omission of elements of the bibliographic record in references included in a paper's reference list (e.g. the title, the identifier, the names of the eighth and subsequent authors), and because errors can be introduced when an author creates a bibliographic reference, the bibliographic reference to a published work may not be a complete or fully accurate expression of the information contained within the authoritative bibliographic record for that work.\n\nA bibliographic reference is a realization of a bibliographic record. \nMoreover, it can contain only items referring to elements contained by the bibliographic record it realizes.\n"@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:na48838fff2c448ce89f43509d0a1d6d8b13 &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_c39b0483ad4baabfbf60ee1dc886f90f_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>endeavour</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#Endeavour <a title="Go to resource documentation" class=ms-2 href=resources/frbr/Endeavour.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The different aspects of user interests in the products of intellectual or artistic artifact.">The different aspects of user interests in the products of intellectual or artistic artifact.
@@ -1005,9 +1005,9 @@ _:n51bade8583654abf9dc44b4aa56910b9b14 &lt;http://www.w3.org/1999/02/22-rdf-synt
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_c39b0483ad4baabfbf60ee1dc886f90f_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_c39b0483ad4baabfbf60ee1dc886f90f_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The different aspects of user interests in the products of intellectual or artistic artifact."@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://www.w3.org/2000/01/rdf-schema#label> "endeavour"@en &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_bb2b63df5367f3632dad1cf8d66b98c4_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>expression</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#Expression <a title="Go to resource documentation" class=ms-2 href=resources/frbr/Expression.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -1069,9 +1069,9 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
     "@id": "http://purl.org/spar/biro"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_bb2b63df5367f3632dad1cf8d66b98c4_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nThe intellectual or artistic realization of a work in the form of alphanumeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.\n\nAn expression is the specific intellectual or artistic form that a work takes each time it is 'realized'. \nExpression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.\n        "@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#label> "expression"@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_6fa7dbc22a6ae8f247d76ce77fcb7c86_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>library catalogue</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/biro/LibraryCatalogue <a title="Go to resource documentation" class=ms-2 href=resources/biro/LibraryCatalogue.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A catalogue of the bibliographic holdings of a library.">A catalogue of the bibliographic holdings of a library.
@@ -1150,13 +1150,13 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_6fa7dbc22a6ae8f247d76ce77fcb7c86_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A catalogue of the bibliographic holdings of a library."@en &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_6fa7dbc22a6ae8f247d76ce77fcb7c86_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "library catalogue"@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A catalogue of the bibliographic holdings of a library."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2000/01/rdf-schema#label> "library catalogue"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/biro/BibliographicCollection> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://purl.org/vocab/vann/example> "\n    :my-library-catalogue a biro:LibraryCatalogue ;\n        dcterms:description 'The catalogue of a university library.' .\n    " &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/LibraryCatalogue> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_2e25813f18565f312947bac9eb143301_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>list</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/co/List <a title="Go to resource documentation" class=ms-2 href=resources/co/List.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An ordered array of items, that can be present in multiple copies.">An ordered array of items, that can be present in multiple copies.
@@ -1201,10 +1201,10 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_2e25813f18565f312947bac9eb143301_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/List> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_2e25813f18565f312947bac9eb143301_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/List> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/co/List> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An ordered array of items, that can be present in multiple copies."@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/co/List> &lt;http://www.w3.org/2000/01/rdf-schema#label> "list"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/co/List> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/co/List> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_1a65a2a94c9bd4d123360890d53c9594_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>reference list</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/biro/ReferenceList <a title="Go to resource documentation" class=ms-2 href=resources/biro/ReferenceList.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A list used to describe the bibliography of a research paper, a journal article, a book, a book chapter or similar publication.">A list used to describe the bibliography of a research paper, a journal article, a book, a book chapter or similar publication.
@@ -1283,13 +1283,13 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_1a65a2a94c9bd4d123360890d53c9594_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/biro/BibliographicList> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_1a65a2a94c9bd4d123360890d53c9594_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2000/01/rdf-schema#label> "reference list"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://purl.org/vocab/vann/example> "\n    :my-reference-list a biro:ReferenceList ;\n        dcterms:description 'The reference list of my paper.' .\n    " &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/biro/BibliographicList> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2000/01/rdf-schema#label> "reference list"@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/ReferenceList> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A list used to describe the bibliography of a research paper, a journal article, a book, a book chapter or similar publication."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/ReferenceList> &lt;http://purl.org/vocab/vann/example> "\n    :my-reference-list a biro:ReferenceList ;\n        dcterms:description 'The reference list of my paper.' .\n    " &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_c9b20bc0e8bfbce33965f52f7c0194ea_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>set</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/co/Set <a title="Go to resource documentation" class=ms-2 href=resources/co/Set.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A collection that cannot contain duplicate elements.">A collection that cannot contain duplicate elements.
@@ -1334,10 +1334,10 @@ Expression encompasses, for example, the specific words, sentences, paragraphs, 
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_c9b20bc0e8bfbce33965f52f7c0194ea_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/Set> &lt;http://www.w3.org/2000/01/rdf-schema#label> "set"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/co/Set> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/co/Set> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A collection that cannot contain duplicate elements."@en &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_c9b20bc0e8bfbce33965f52f7c0194ea_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/Set> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A collection that cannot contain duplicate elements."@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/co/Set> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/co/Set> &lt;http://www.w3.org/2000/01/rdf-schema#label> "set"@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/co/Set> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_e1b4192da98236eece2984d36e94aba8_Concept><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>work</div> <sup class="badge bg-light text-secondary c" title=Class>c</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#concepts>Class ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#Work <a title="Go to resource documentation" class=ms-2 href=resources/frbr/Work.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="
@@ -1394,9 +1394,9 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_e1b4192da98236eece2984d36e94aba8_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_e1b4192da98236eece2984d36e94aba8_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nA distinct intellectual or artistic creation.\n\nA work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.\n        "@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#label> "work"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nA distinct intellectual or artistic creation.\n\nA work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.\n        "@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=relations><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Object Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">7</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_3b001f3519615ba49806c415259589de_Relation> has element </a><a href=#id_a29c00abf711ab05e91ca658e57c6e2e_Relation> has part </a><a href=#id_6bb54238577a56d525e2de8d030096d3_Relation> has realization </a><a href=#id_f4d11089679a1415a4279d01f25b10cc_Relation> is element of </a><a href=#id_d2d43b0ae8cf657f5fa371abeec9f128_Relation> is realization of </a><a href=#id_80fcce3ead303d97328dc707a09bd0a2_Relation> is referenced by </a><a href=#id_b3a324cd2fed19cfa3585fde096c32b6_Relation> references </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_3b001f3519615ba49806c415259589de_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has element</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/co/element <a title="Go to resource documentation" class=ms-2 href=resources/co/element.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
@@ -1442,10 +1442,10 @@ A work is an abstract entity; there is no single material object one can point t
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_3b001f3519615ba49806c415259589de_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/element> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has element"@en &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_3b001f3519615ba49806c415259589de_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/element> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/co/element> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has element"@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/co/element> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/co/element> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The link to the members of a collection."@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/co/element> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_a29c00abf711ab05e91ca658e57c6e2e_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has part</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#part <a title="Go to resource documentation" class=ms-2 href=resources/frbr/part.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="
@@ -1512,11 +1512,11 @@ An endeavour incorporating another endeavour.
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_a29c00abf711ab05e91ca658e57c6e2e_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#TransitiveProperty> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "\nAn endeavour incorporating another endeavour.\n        "@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has part"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#part> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_6bb54238577a56d525e2de8d030096d3_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>has realization</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#realization <a title="Go to resource documentation" class=ms-2 href=resources/frbr/realization.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="An expression that realizes a work.">An expression that realizes a work.
@@ -1574,9 +1574,9 @@ An endeavour incorporating another endeavour.
     "@id": "http://purl.org/spar/biro"
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_6bb54238577a56d525e2de8d030096d3_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#label> "has realization"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "An expression that realizes a work."@en &lt;http://purl.org/spar/biro> .
 
@@ -1609,11 +1609,11 @@ An endeavour incorporating another endeavour.
         "http://www.w3.org/2000/01/rdf-schema#comment": [
           {
             "@language": "en",
-            "@value": "The link to a collection in which the object is member."
+            "@value": "The relation between an object and a collection which the object is a member of."
           },
           {
             "@language": "en",
-            "@value": "The relation between an object and a collection which the object is a member of."
+            "@value": "The link to a collection in which the object is member."
           }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -1636,12 +1636,12 @@ An endeavour incorporating another endeavour.
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_f4d11089679a1415a4279d01f25b10cc_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is element of"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_f4d11089679a1415a4279d01f25b10cc_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/co/element> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The link to a collection in which the object is member."@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an object and a collection which the object is a member of."@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/co/> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between an object and a collection which the object is a member of."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/co/elementOf> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is element of"@en &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_d2d43b0ae8cf657f5fa371abeec9f128_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>is realization of</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/vocab/frbr/core#realizationOf <a title="Go to resource documentation" class=ms-2 href=resources/frbr/realizationOf.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="A work realized through an expression.">A work realized through an expression.
@@ -1706,11 +1706,11 @@ An endeavour incorporating another endeavour.
   }
 ]</code></pre></div><div class="tab-pane fade" id=id_d2d43b0ae8cf657f5fa371abeec9f128_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A work realized through an expression."@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/vocab/frbr/core#realization> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is realization of"@en &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/vocab/frbr/core#Work> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/vocab/frbr/core#> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/vocab/frbr/core#realizationOf> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Expression> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_80fcce3ead303d97328dc707a09bd0a2_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>is referenced by</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/biro/isReferencedBy <a title="Go to resource documentation" class=ms-2 href=resources/biro/isReferencedBy.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a publication and the bibliographic record or bibliographic reference describing it.">The relation between a publication and the bibliographic record or bibliographic reference describing it.
@@ -1744,16 +1744,16 @@ An endeavour incorporating another endeavour.
         rdfs:comment "The relation between a publication and the bibliographic record or bibliographic reference describing it."@en ;
         rdfs:domain frbr:Endeavour ;
         rdfs:isDefinedBy biro: ;
-        rdfs:range _:n51bade8583654abf9dc44b4aa56910b9b4 ;
+        rdfs:range _:na48838fff2c448ce89f43509d0a1d6d8b4 ;
         vs:term_status reg:statusStable .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b4 a owl:Class ;
-        owl:unionOf _:n51bade8583654abf9dc44b4aa56910b9b5 .
+    _:na48838fff2c448ce89f43509d0a1d6d8b4 a owl:Class ;
+        owl:unionOf _:na48838fff2c448ce89f43509d0a1d6d8b5 .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b5 rdf:first biro:BibliographicRecord ;
-        rdf:rest _:n51bade8583654abf9dc44b4aa56910b9b6 .
+    _:na48838fff2c448ce89f43509d0a1d6d8b5 rdf:first biro:BibliographicRecord ;
+        rdf:rest _:na48838fff2c448ce89f43509d0a1d6d8b6 .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b6 rdf:first biro:BibliographicReference ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b6 rdf:first biro:BibliographicReference ;
         rdf:rest () .
 }
 
@@ -1794,7 +1794,7 @@ An endeavour incorporating another endeavour.
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
           {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b4"
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b4"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -1804,7 +1804,7 @@ An endeavour incorporating another endeavour.
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b4",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b4",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -1824,20 +1824,20 @@ An endeavour incorporating another endeavour.
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_80fcce3ead303d97328dc707a09bd0a2_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:n51bade8583654abf9dc44b4aa56910b9b4 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_80fcce3ead303d97328dc707a09bd0a2_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a publication and the bibliographic record or bibliographic reference describing it."@en &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na48838fff2c448ce89f43509d0a1d6d8b6 &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://purl.org/vocab/vann/example> "\n    :my-paper\n        biro:isReferencedBy :my-bibliographic-reference .\n    " &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b4 &lt;http://www.w3.org/2002/07/owl#unionOf> _:na48838fff2c448ce89f43509d0a1d6d8b5 &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b4 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n51bade8583654abf9dc44b4aa56910b9b5 &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is referenced by"@en &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n51bade8583654abf9dc44b4aa56910b9b6 &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://www.w3.org/2000/01/rdf-schema#range> _:na48838fff2c448ce89f43509d0a1d6d8b4 &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://purl.org/vocab/vann/example> "\n    :my-paper\n        biro:isReferencedBy :my-bibliographic-reference .\n    " &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div><div class="card mb-2 anchor-offset" id=id_b3a324cd2fed19cfa3585fde096c32b6_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>references</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#relations>Object Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/biro/references <a title="Go to resource documentation" class=ms-2 href=resources/biro/references.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
                                             data-md="The relation between a bibliographic record or a bibliographic reference and the publication being referenced.">The relation between a bibliographic record or a bibliographic reference and the publication being referenced.
@@ -1869,19 +1869,19 @@ _:n51bade8583654abf9dc44b4aa56910b9b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
         biro:references :my-paper .
     """ ;
         rdfs:comment "The relation between a bibliographic record or a bibliographic reference and the publication being referenced."@en ;
-        rdfs:domain _:n51bade8583654abf9dc44b4aa56910b9b1 ;
+        rdfs:domain _:na48838fff2c448ce89f43509d0a1d6d8b1 ;
         rdfs:isDefinedBy biro: ;
         rdfs:range frbr:Endeavour ;
         owl:inverseOf biro:isReferencedBy ;
         vs:term_status reg:statusStable .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b1 a owl:Class ;
-        owl:unionOf _:n51bade8583654abf9dc44b4aa56910b9b2 .
+    _:na48838fff2c448ce89f43509d0a1d6d8b1 a owl:Class ;
+        owl:unionOf _:na48838fff2c448ce89f43509d0a1d6d8b2 .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b2 rdf:first biro:BibliographicRecord ;
-        rdf:rest _:n51bade8583654abf9dc44b4aa56910b9b3 .
+    _:na48838fff2c448ce89f43509d0a1d6d8b2 rdf:first biro:BibliographicRecord ;
+        rdf:rest _:na48838fff2c448ce89f43509d0a1d6d8b3 .
 
-    _:n51bade8583654abf9dc44b4aa56910b9b3 rdf:first biro:BibliographicReference ;
+    _:na48838fff2c448ce89f43509d0a1d6d8b3 rdf:first biro:BibliographicReference ;
         rdf:rest () .
 }
 
@@ -1906,7 +1906,7 @@ _:n51bade8583654abf9dc44b4aa56910b9b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
           {
-            "@id": "_:n51bade8583654abf9dc44b4aa56910b9b1"
+            "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b1"
           }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -1937,7 +1937,7 @@ _:n51bade8583654abf9dc44b4aa56910b9b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
         ]
       },
       {
-        "@id": "_:n51bade8583654abf9dc44b4aa56910b9b1",
+        "@id": "_:na48838fff2c448ce89f43509d0a1d6d8b1",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -1957,21 +1957,21 @@ _:n51bade8583654abf9dc44b4aa56910b9b6 &lt;http://www.w3.org/1999/02/22-rdf-synta
     ],
     "@id": "http://purl.org/spar/biro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_b3a324cd2fed19cfa3585fde096c32b6_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a bibliographic record or a bibliographic reference and the publication being referenced."@en &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n51bade8583654abf9dc44b4aa56910b9b3 &lt;http://purl.org/spar/biro> .
+]</code></pre></div><div class="tab-pane fade" id=id_b3a324cd2fed19cfa3585fde096c32b6_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/biro/references> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference\n        biro:references :my-paper .\n    " &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2002/07/owl#inverseOf> &lt;http://purl.org/spar/biro/isReferencedBy> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/references> &lt;http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference\n        biro:references :my-paper .\n    " &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#domain> _:n51bade8583654abf9dc44b4aa56910b9b1 &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#label> "references"@en &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b1 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n51bade8583654abf9dc44b4aa56910b9b2 &lt;http://purl.org/spar/biro> .
-&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:na48838fff2c448ce89f43509d0a1d6d8b3 &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#domain> _:na48838fff2c448ce89f43509d0a1d6d8b1 &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b1 &lt;http://www.w3.org/2002/07/owl#unionOf> _:na48838fff2c448ce89f43509d0a1d6d8b2 &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/vocab/frbr/core#Endeavour> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/biro> .
 &lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/biro/> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
-_:n51bade8583654abf9dc44b4aa56910b9b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicReference> &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a bibliographic record or a bibliographic reference and the publication being referenced."@en &lt;http://purl.org/spar/biro> .
+&lt;http://purl.org/spar/biro/references> &lt;http://www.w3.org/2000/01/rdf-schema#label> "references"@en &lt;http://purl.org/spar/biro> .
+_:na48838fff2c448ce89f43509d0a1d6d8b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/biro/BibliographicRecord> &lt;http://purl.org/spar/biro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div class="anchor-offset mb-5" id=annotations><h3 class="section-header d-flex align-items-center justify-content-between mb-4">Annotation Properties <span class="btn btn-outline-secondary badge bg-primary rounded-pill fs-6">8</span></h3><div class="card bg-light border-0 mb-4 shadow-sm"><div class="card-body p-3" style=background-color:#F4FFFF><p class="text-muted mb-2 text-uppercase fw-bold">Jump to:<div class="d-flex flex-wrap gap-2"><a href=#id_dacf627f3d9075d7c805ce9d42521333_Annotation> comment </a><a href=#id_d8448f7de5238dcdf58a6a729dd44487_Annotation> creator </a><a href=#id_faeeb6444c2ed08c40ecc1880be289ca_Annotation> date </a><a href=#id_38e1536b72babc1a393bbfc37d7a86eb_Annotation> description </a><a href=#id_4f75ce12336ab89a4edebd807cd62265_Annotation> label </a><a href=#id_cfac1f9e90cd24d60339c7abfecdb2f3_Annotation> rights </a><a href=#id_10a2b68e090fc22a4421947526be1e64_Annotation> title </a><a href=#id_2285a2da9df8217baec7f9cda34d3890_Annotation> version info </a></div></div></div></div><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>comment</div> <sup class="badge bg-light text-secondary ap" title="Annotation Property">ap</sup></h4><span class=backlink> back to <a href=#toc>ToC</a> or <a href=#annotations>Annotation Property ToC</a> </span></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.w3.org/2000/01/rdf-schema#comment <a title="Go to resource documentation" class=ms-2 href=resources/rdfs/comment.html><i class="bi bi-box-arrow-up-right"></i></a></div><div class="card-footer bg-white py-0"><div class="accordion accordion-flush prov-accordion" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_acc><div class=accordion-item><h2 class="accordion-header d-flex justify-content-end" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_head><button class="accordion-button collapsed py-1 px-2 small fw-bold text-uppercase text-primary w-auto" title="RDF provenance" aria-controls=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov aria-expanded=false data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov data-bs-toggle=collapse type=button><span>RDF provenance</span> <i class="bi bi-code"></i></button></h2><div class="accordion-collapse collapse" aria-labelledby=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_head data-bs-parent=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_acc id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov><div class="accordion-body p-2"><ul class="nav nav-tabs nav-tabs-sm justify-content-end small mb-0" role=tablist><li class=nav-item role=presentation><button class="nav-link active py-1 px-2" data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_1 data-bs-toggle=tab role=tab type=button>TriG</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_2 data-bs-toggle=tab role=tab type=button>JSON-LD</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_3 data-bs-toggle=tab role=tab type=button>N-Quads</button></ul><div class=tab-content><div class="tab-pane fade show active" id=id_dacf627f3d9075d7c805ce9d42521333_Annotation_prov_1 role=tabpanel><pre class="mb-0 small"><code>@prefix owl: &lt;http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#> .
